@@ -6,7 +6,7 @@ var app = express();
 // });
 //app.use(express.static(__dirname + '/public'));
 app.use('/static', express.static(__dirname + '/public'))
-app.use('/lib', express.static(__dirname + '/bower_components'));
+app.use('/lib', express.static(__dirname + '/node_modules'));
     
 app.listen(3000);
 console.log('Server running on the port 3000');
